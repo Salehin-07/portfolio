@@ -9,13 +9,14 @@ function initializeApp() {
     setupCustomCursor();
     setupNavigation();
     setupThemeToggle();
-    setupScrollAnimations();u
+    setupScrollAnimations();
     setupHeroAnimations();
     setupSkillInteractions();
     setupStatsCounter();
     setupSmoothScrolling();
     setupProjectHovers();
-    setupProfileImage();
+    setupProfileImage(); // Added this line
+    setupProjectInteractions(); // Added this line
     console.log('Portfolio initialized successfully!');
 }
 
@@ -390,6 +391,63 @@ function setupProjectHovers() {
     });
 }
 
+// Profile Image Interactions
+function setupProfileImage() {
+    const profileImage = document.querySelector('.profile-image');
+    if (!profileImage) return;
+    
+    profileImage.addEventListener('mouseenter', () => {
+        profileImage.style.transform = 'scale(1.05)';
+        profileImage.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+    });
+    
+    profileImage.addEventListener('mouseleave', () => {
+        profileImage.style.transform = 'scale(1)';
+        profileImage.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+    });
+    
+    // Parallax effect on scroll
+    window.addEventListener('scroll', throttle(() => {
+        const scrollY = window.scrollY;
+        profileImage.style.transform = `translateY(${scrollY * 0.05}px) scale(1)`;
+    }, 10));
+}
+
+// Project Interactions
+function setupProjectInteractions() {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+        // Lazy load images with Intersection Observer
+        const img = card.querySelector('img');
+        if (img && img.getAttribute('loading') === 'lazy') {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src || lazyImage.src;
+                        lazyImage.classList.add('loaded');
+                        observer.unobserve(lazyImage);
+                    }
+                });
+            });
+            
+            observer.observe(img);
+        }
+        
+        // Enhanced hover effects
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px)';
+            this.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = 'var(--shadow-md)';
+        });
+    });
+}
+
 // Utility Functions
 function throttle(func, limit) {
     let inThrottle;
@@ -483,9 +541,9 @@ document.addEventListener('keydown', (e) => {
 // Page Visibility API
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-        document.title = 'Come Back! - Portfolio';
+        document.title = 'Come Back! - Md Abu Salehin';
     } else {
-        document.title = 'Your Name - Creative Developer';
+        document.title = 'Md Abu Salehin - Creative Python Django Developer';
     }
 });
 
@@ -505,30 +563,5 @@ if ('serviceWorker' in navigator) {
         //     .catch(registrationError => console.log('SW registration failed:', registrationError));
     });
 }
-
-
-
-// Add to JavaScript file
-function setupProfileImage() {
-  const profileImage = document.querySelector('.profile-image');
-  if (!profileImage) return;
-  
-  profileImage.addEventListener('mouseenter', () => {
-    profileImage.style.transform = 'scale(1.05)';
-    profileImage.style.borderColor = 'rgba(255, 255, 255, 0.3)';
-  });
-  
-  profileImage.addEventListener('mouseleave', () => {
-    profileImage.style.transform = 'scale(1)';
-    profileImage.style.borderColor = 'rgba(255, 255, 255, 0.1)';
-  });
-  
-  // Parallax effect on scroll
-  window.addEventListener('scroll', throttle(() => {
-    const scrollY = window.scrollY;
-    profileImage.style.transform = `translateY(${scrollY * 0.05}px) scale(1)`;
-  }, 10));
-}
-
 
 console.log('🚀 Portfolio fully loaded and optimized!');
