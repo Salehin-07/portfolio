@@ -1,572 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Abu Salehin - Creative Python Django Developer</title>
-    <meta name="description" content="Md Abu Salehin - Creative Python Django Developer specializing in modern web applications">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Abu Salehin - Creative Python Django Developer</title>
+  <meta name="description" content="Md Abu Salehin - Creative Python Django Developer specializing in modern web applications">
+  <meta name="geo.region" content="BD"> <!-- Bangladesh <-->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="revisit-after" content="7 days">
+  <meta name="rating" content="general">
+  <meta name="distribution" content="global">
+
+  <!-- Favicon -->
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="logo.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Md Abu Salehin – Creative Python Django Developer">
+  <meta property="og:description" content="Creative Python Django Developer specializing in modern web applications.">
+  <meta property="og:image" content="https://mdsalehin.netlify.app/logo.png">
+  <meta property="og:url" content="https://mdsalehin.netlify.app/">
+  <meta property="og:site_name" content="Md Abu Salehin - Portfolio">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Md Abu Salehin – Creative Python Django Developer">
+  <meta name="twitter:description" content="Creative Python Django Developer specializing in modern web applications.">
+  <meta name="twitter:image" content="https://mdsalehin.netlify.app/logo.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Md Abu Salehin",
+      "url": "https://mdsalehin.netlify.app",
+      "sameAs": [
+        "https://github.com/Salehin-07",
+      ],
+      "jobTitle": "Python Django Developer",
+      "image": "https://mdsalehin.netlify.app/logo.ico"
+    }
+  </script>
 </head>
 <body>
-    <!-- Cursor Trail -->
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
+  <!-- Cursor Trail -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
 
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loader">
-            <div class="loader-text">Loading</div>
-            <div class="loader-bar"></div>
-        </div>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loader">
+      <div class="loader-text">
+        Loading
+      </div>
+      <div class="loader-bar"></div>
     </div>
+  </div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">
-                    <span class="logo-bracket">&lt;</span>
-                    <span class="logo-name">Salehin</span>
-                    <span class="logo-bracket">/&gt;</span>
-                </a>
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Work</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="theme-toggle" id="themeToggle">
-                <div class="theme-icon">
-                    <i class="fas fa-sun sun-icon"></i>
-                    <i class="fas fa-moon moon-icon"></i>
-                </div>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Salehin</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="theme-toggle" id="themeToggle">
+        <div class="theme-icon">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
         </div>
-    </nav>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <span class="greeting-text">Hello, I'm</span>
         </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-greeting">
-                    <span class="greeting-text">Hello, I'm</span>
-                </div>
-                <h1 class="hero-title">
-                    <span class="title-line">Creative Django</span>
-                    <span class="title-line highlight">Developer</span>
-                </h1>
-                <div class="hero-subtitle">
-                    <span class="typewriter">Full Stack • Python Django • Creative Coding</span>
-                </div>
-                <p class="hero-description">
-                    I craft digital experiences that blend cutting-edge technology 
-                    with beautiful design. Specialized in Django and modern web technologies.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>Explore Work</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="mailto:mdabusalehin123@gmail.com" class="btn btn-secondary">
-                        <span>Get In Touch</span>
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                <div class="hero-socials">
-                    <a href="https://github.com/Salehin-07" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.reddit.com/u/Salehin_101/s/RNgm335O68" class="social-link" target="_blank">
-                        <i class="fab fa-reddit"></i>
-                        <span>Reddit</span>
-                    </a>
-                    <!--<a href="https://dribbble.com/yourprofile" class="social-link" target="_blank">-->
-                    <!--    <i class="fab fa-dribbble"></i>-->
-                    <!--    <span>Dribbble</span>-->
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="code-editor">
-                    <div class="editor-header">
-                        <div class="editor-controls">
-                            <span class="control red"></span>
-                            <span class="control yellow"></span>
-                            <span class="control green"></span>
-                        </div>
-                        <div class="editor-title">main.py</div>
-                    </div>
-                    <div class="editor-content">
-                        <div class="code-line"><span class="keyword"></span> <span class="variable">developer</span> = {</div>
-                        <div class="code-line">  <span class="property">name</span>: <span class="string">"Md Abu Salehin"</span>,</div>
-                        <div class="code-line">  <span class="property">skills</span>: [<span class="string">"Python"</span>, <span class="string">"Django"</span>],</div>
-                        <div class="code-line">  <span class="property">passion</span>: <span class="string">"Creating"</span>,</div>
-                        <div class="code-line">  <span class="property">status</span>: <span class="string">"Available"</span></div>
-                        <div class="code-line">}</div>
-                    </div>
-                </div>
-            </div>
+        <h1 class="hero-title">
+          <span class="title-line">Creative Django</span>
+          <span class="title-line highlight">Developer</span>
+        </h1>
+        <div class="hero-subtitle">
+          <span class="typewriter">Full Stack • Python Django • Creative Coding</span>
         </div>
-        <!--<div class="scroll-indicator">-->
-        <!--    <div class="scroll-line"></div>-->
-        <!--    <span>Scroll</span>-->
+        <p class="hero-description">
+          I craft digital experiences that blend cutting-edge technology
+          with beautiful design. Specialized in Django and modern web technologies.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="mailto:mdabusalehin123@gmail.com" class="btn btn-secondary">
+            <span>Get In Touch</span>
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Salehin-07" class="social-link" target="_blank">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.reddit.com/u/Salehin_101/s/RNgm335O68" class="social-link" target="_blank">
+            <i class="fab fa-reddit"></i>
+            <span>Reddit</span>
+          </a>
+          <!--<a href="https://dribbble.com/yourprofile" class="social-link" target="_blank">-->
+          <!--    <i class="fab fa-dribbble"></i>-->
+          <!--    <span>Dribbble</span>-->
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-editor">
+        <div class="editor-header">
+          <div class="editor-controls">
+            <span class="control red"></span>
+            <span class="control yellow"></span>
+            <span class="control green"></span>
+          </div>
+          <div class="editor-title">
+            main.py
+          </div>
+        </div>
+        <div class="editor-content">
+          <div class="code-line">
+            <span class="keyword"></span> <span class="variable">developer</span> = {
+          </div>
+          <div class="code-line">
+            <span class="property">name</span>: <span class="string">"Md Abu Salehin"</span>,
+          </div>
+          <div class="code-line">
+            <span class="property">skills</span>: [<span class="string">"Python"</span>, <span class="string">"Django"</span>],
+          </div>
+          <div class="code-line">
+            <span class="property">passion</span>: <span class="string">"Creating"</span>,
+          </div>
+          <div class="code-line">
+            <span class="property">status</span>: <span class="string">"Available"</span>
+          </div>
+          <div class="code-line">
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="scroll-indicator">-->
+  <!--    <div class="scroll-line"></div>-->
+  <!--    <span>Scroll</span>-->
+  <!--</div>-->
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-content">
+        <div class="about-text">
+          <p class="text-large">
+            I'm a passionate developer who loves creating
+            <span class="text-highlight">exceptional digital experiences</span>
+            through clean code and innovative design.
+          </p>
+          <p>
+            I specialize in
+            building scalable applications using modern technologies. I believe
+            in the power of good design and user experience to solve real-world problems.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies
+            and enjoying life.
+          </p>
+        </div>
+        <div class="about-details">
+          <div class="detail-item">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">Tangail, Dhaka, Bangladesh</span>
+          </div>
+          <!--<div class="detail-item">-->
+          <!--    <span class="detail-label">Experience</span>-->
+          <!--    <span class="detail-value">3+ Years</span>-->
+          <!--</div>-->
+          <div class="detail-item">
+            <span class="detail-label">Email</span>
+            <span class="detail-value">mdabusalehin123@gmail.com</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Status</span>
+            <span class="detail-value status-available">Available for hire</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number" data-count="7">
+            0
+          </div>
+          <div class="stat-label">
+            Projects Completed
+          </div>
+          <div class="stat-icon">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+        <!--<div class="stat-card">-->
+        <!--    <div class="stat-number" data-count="3">0</div>-->
+        <!--    <div class="stat-label">Years Experience</div>-->
+        <!--    <div class="stat-icon">-->
+        <!--        <i class="fas fa-calendar"></i>-->
+        <!--    </div>-->
         <!--</div>-->
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">About Me</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-grid">
-                <div class="about-content">
-                    <div class="about-text">
-                        <p class="text-large">
-                            I'm a passionate developer who loves creating 
-                            <span class="text-highlight">exceptional digital experiences</span> 
-                            through clean code and innovative design.
-                        </p>
-                        <p>
-                            I specialize in 
-                            building scalable applications using modern technologies. I believe 
-                            in the power of good design and user experience to solve real-world problems.
-                        </p>
-                        <p>
-                            When I'm not coding, you'll find me exploring new technologies 
-                            and enjoying life.
-                        </p>
-                    </div>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Location</span>
-                            <span class="detail-value">Tangail, Dhaka, Bangladesh</span>
-                        </div>
-                        <!--<div class="detail-item">-->
-                        <!--    <span class="detail-label">Experience</span>-->
-                        <!--    <span class="detail-value">3+ Years</span>-->
-                        <!--</div>-->
-                        <div class="detail-item">
-                            <span class="detail-label">Email</span>
-                            <span class="detail-value">mdabusalehin123@gmail.com</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Status</span>
-                            <span class="detail-value status-available">Available for hire</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number" data-count="7">0</div>
-                        <div class="stat-label">Projects Completed</div>
-                        <div class="stat-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                    </div>
-                    <!--<div class="stat-card">-->
-                    <!--    <div class="stat-number" data-count="3">0</div>-->
-                    <!--    <div class="stat-label">Years Experience</div>-->
-                    <!--    <div class="stat-icon">-->
-                    <!--        <i class="fas fa-calendar"></i>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <div class="stat-card">
-                        <div class="stat-number" data-count="50">0</div>
-                        <div class="stat-label">GitHub Commits</div>
-                        <div class="stat-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-count="3">0</div>
-                        <div class="stat-label">Happy Clients</div>
-                        <div class="stat-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="50">
+            0
+          </div>
+          <div class="stat-label">
+            GitHub Commits
+          </div>
+          <div class="stat-icon">
+            <i class="fab fa-github"></i>
+          </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Skills & Technologies</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-content">
-                <div class="skill-categories">
-                    <div class="skill-category active" data-category="frontend">
-                        <div class="category-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Frontend</h3>
-                        <p>Basic UI/UX Development</p>
-                    </div>
-                    <div class="skill-category" data-category="backend">
-                        <div class="category-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Backend</h3>
-                        <p>Server & Database Management</p>
-                    </div>
-                    <div class="skill-category" data-category="tools">
-                        <div class="category-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h3>Tools</h3>
-                        <p>Development & Design Tools</p>
-                    </div>
-                </div>
-                <div class="skills-showcase">
-                    <div class="skill-group active" data-group="frontend">
-                        <!--<div class="skill-item">-->
-                        <!--    <div class="skill-info">-->
-                        <!--        <span class="skill-name">Django</span>-->
-                        <!--        <span class="skill-level">Intermediate</span>-->
-                        <!--    </div>-->
-                        <!--    <div class="skill-bar">-->
-                        <!--        <div class="skill-progress" style="width: 70%"></div>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Html</span>
-                                <span class="skill-level">Basic</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 40%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Css</span>
-                                <span class="skill-level">Basic</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 40%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Js</span>
-                                <span class="skill-level">Basic</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 40%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-group" data-group="backend">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Django</span>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-group" data-group="tools">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Git & GitHub</span>
-                                <span class="skill-level">Basic</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="3">
+            0
+          </div>
+          <div class="stat-label">
+            Happy Clients
+          </div>
+          <div class="stat-icon">
+            <i class="fas fa-heart"></i>
+          </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Featured Work</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="projects-grid">
-                <article class="project-card">
-    <div class="project-image">
-        <div class="project-overlay">
-            <div class="project-links">
-                <a href="https://github.com/Salehin-07/steelbd" class="project-link" target="_blank" aria-label="View source code">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://steelbd.onrender.com" class="project-link" target="_blank" aria-label="View live demo">
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-        </div>
-        <img src="" alt="SteelBD Construction Website" loading="lazy">
+      </div>
     </div>
-    <div class="project-content">
-        <div class="project-meta">
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-content">
+      <div class="skill-categories">
+        <div class="skill-category active" data-category="frontend">
+          <div class="category-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Frontend</h3>
+          <p>
+            Basic UI/UX Development
+          </p>
+        </div>
+        <div class="skill-category" data-category="backend">
+          <div class="category-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend</h3>
+          <p>
+            Server & Database Management
+          </p>
+        </div>
+        <div class="skill-category" data-category="tools">
+          <div class="category-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Tools</h3>
+          <p>
+            Development & Design Tools
+          </p>
+        </div>
+      </div>
+      <div class="skills-showcase">
+        <div class="skill-group active" data-group="frontend">
+          <!--<div class="skill-item">-->
+          <!--    <div class="skill-info">-->
+          <!--        <span class="skill-name">Django</span>-->
+          <!--        <span class="skill-level">Intermediate</span>-->
+          <!--    </div>-->
+          <!--    <div class="skill-bar">-->
+          <!--        <div class="skill-progress" style="width: 70%"></div>-->
+          <!--    </div>-->
+          <!--</div>-->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Html</span>
+              <span class="skill-level">Basic</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 40%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Css</span>
+              <span class="skill-level">Basic</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 40%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Js</span>
+              <span class="skill-level">Basic</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group" data-group="backend">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Django</span>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group" data-group="tools">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-level">Basic</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://github.com/Salehin-07/steelbd" class="project-link" target="_blank" aria-label="View source code">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://steelbd.onrender.com" class="project-link" target="_blank" aria-label="View live demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <img src="" alt="SteelBD Construction Website" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-meta">
             <span class="project-type">Civil Construction Website</span>
             <span class="project-year">2025</span>
-        </div>
-        <h3 class="project-title">SteelBD</h3>
-        <p class="project-description">
-            Fully dynamic civil construction website with a content management system (CMS) and admin panel. 
+          </div>
+          <h3 class="project-title">SteelBD</h3>
+          <p class="project-description">
+            Fully dynamic civil construction website with a content management system (CMS) and admin panel.
             Built with Django, allowing easy management of projects, services, and client content.
-        </p>
-        <div class="project-tech">
+          </p>
+          <div class="project-tech">
             <span>Django</span>
             <span>HTML/CSS/JS</span>
             <span>PostgreSQL</span>
             <span>CMS</span>
+          </div>
         </div>
-    </div>
-</article>
-<article class="project-card">
-    <div class="project-image">
-        <div class="project-overlay">
+      </article>
+      <article class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
             <div class="project-links">
-                <!-- No repo available -->
-                <a href="#" class="project-link disabled" aria-label="Source code not available">
-                    <i class="fab fa-github"></i>
-                </a>
-                <!-- No live demo available -->
-                <a href="#" class="project-link disabled" aria-label="Live demo not available">
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
+              <!-- No repo available -->
+              <a href="#" class="project-link disabled" aria-label="Source code not available">
+                <i class="fab fa-github"></i>
+              </a>
+              <!-- No live demo available -->
+              <a href="#" class="project-link disabled" aria-label="Live demo not available">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+          <img src="https://via.placeholder.com/600x400/3b82f6/ffffff?text=High+School+Website" alt="High School Website" loading="lazy">
         </div>
-        <img src="https://via.placeholder.com/600x400/3b82f6/ffffff?text=High+School+Website" alt="High School Website" loading="lazy">
-    </div>
-    <div class="project-content">
-        <div class="project-meta">
+        <div class="project-content">
+          <div class="project-meta">
             <span class="project-type">School Website</span>
             <span class="project-year">2025</span>
-        </div>
-        <h3 class="project-title">High School Website</h3>
-        <p class="project-description">
-            Delivered a fully functional high school website with dynamic content, student/teacher information, and responsive design. 
+          </div>
+          <h3 class="project-title">High School Website</h3>
+          <p class="project-description">
+            Delivered a fully functional high school website with dynamic content, student/teacher information, and responsive design.
             Built using Django for backend management, including a CMS for easy updates by staff.
-        </p>
-        <div class="project-tech">
+          </p>
+          <div class="project-tech">
             <span>Django</span>
             <span>HTML/CSS/JS</span>
             <span>PostgreSQL</span>
             <span>CMS</span>
+          </div>
         </div>
-    </div>
-</article>
-<article class="project-card">
-    <div class="project-image">
-        <div class="project-overlay">
+      </article>
+      <article class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
             <div class="project-links">
-                <a href="https://github.com/Salehin-07/AnimeKarma" class="project-link" target="_blank" aria-label="View source code">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="project-link" target="_blank" aria-label="View live demo">
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
+              <a href="https://github.com/Salehin-07/AnimeKarma" class="project-link" target="_blank" aria-label="View source code">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" target="_blank" aria-label="View live demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+          <img src="" loading="lazy">
         </div>
-        <img src="" loading="lazy">
-    </div>
-    <div class="project-content">
-        <div class="project-meta">
+        <div class="project-content">
+          <div class="project-meta">
             <span class="project-type">Django / API</span>
             <span class="project-year">2025</span>
-        </div>
-        <h3 class="project-title">AnimeKarma</h3>
-        <p class="project-description">
+          </div>
+          <h3 class="project-title">AnimeKarma</h3>
+          <p class="project-description">
             Django-based website fetching the latest news about anime and manga. Fully dynamic with API integration, no login required, and interactive UI to browse recent updates.
-        </p>
-        <div class="project-tech">
+          </p>
+          <div class="project-tech">
             <span>Django</span>
             <span>JavaScript</span>
             <span>HTML/CSS</span>
             <span>API Integration</span>
+          </div>
         </div>
-    </div>
-</article>
-<article class="project-card">
-    <div class="project-image">
-        <div class="project-overlay">
+      </article>
+      <article class="project-card">
+        <div class="project-image">
+          <div class="project-overlay">
             <div class="project-links">
-                <a href="https://github.com/Salehin-07/QR-Karma" class="project-link" target="_blank" aria-label="View source code">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="project-link" target="_blank" aria-label="View live demo">
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
+              <a href="https://github.com/Salehin-07/QR-Karma" class="project-link" target="_blank" aria-label="View source code">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" target="_blank" aria-label="View live demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+          <img src="" alt="QR Code Generator Website" loading="lazy">
         </div>
-        <img src="" alt="QR Code Generator Website" loading="lazy">
-    </div>
-    <div class="project-content">
-        <div class="project-meta">
+        <div class="project-content">
+          <div class="project-meta">
             <span class="project-type">Django / Utility</span>
             <span class="project-year">2025</span>
-        </div>
-        <h3 class="project-title">QR Code Generator</h3>
-        <p class="project-description">
+          </div>
+          <h3 class="project-title">QR Code Generator</h3>
+          <p class="project-description">
             Django-powered web application for generating QR codes. Users can create codes for URLs instantly, all without login.
-        </p>
-        <div class="project-tech">
+          </p>
+          <div class="project-tech">
             <span>Django</span>
             <span>JavaScript</span>
             <span>HTML/CSS</span>
             <span>QR Code API</span>
+          </div>
         </div>
+      </article>
     </div>
-</article>
-            </div>
-            <div class="projects-footer">
-                <a href="https://github.com/Salehin-07/" class="btn btn-outline" target="_blank">
-                    <span>View All Projects</span>
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+    <div class="projects-footer">
+      <a href="https://github.com/Salehin-07/" class="btn btn-outline" target="_blank">
+        <span>View All Projects</span>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">Let's Work Together</h2>
-                <div class="section-line"></div>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">Let's Work Together</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3 class="contact-title">Ready to bring your ideas to life?</h3>
+        <p class="contact-text">
+          I'm always excited to work on new projects and collaborate with
+          amazing people. Let's create something extraordinary together.
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:mdabusalehin123@gmail.com" class="contact-method">
+            <div class="method-icon">
+              <i class="fas fa-envelope"></i>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3 class="contact-title">Ready to bring your ideas to life?</h3>
-                    <p class="contact-text">
-                        I'm always excited to work on new projects and collaborate with 
-                        amazing people. Let's create something extraordinary together.
-                    </p>
-                    <div class="contact-methods">
-                        <a href="mailto:mdabusalehin123@gmail.com" class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="method-info">
-                                <span class="method-label">Email</span>
-                                <span class="method-value">mdabusalehin123@gmail.com</span>
-                            </div>
-                        </a>
-                        <!--<a href="https://linkedin.com/in/yourprofile" class="contact-method" target="_blank">-->
-                        <!--    <div class="method-icon">-->
-                        <!--        <i class="fab fa-linkedin"></i>-->
-                        <!--    </div>-->
-                        <!--    <div class="method-info">-->
-                        <!--        <span class="method-label">LinkedIn</span>-->
-                        <!--        <span class="method-value">Connect with me</span>-->
-                        <!--    </div>-->
-                        <!--</a>-->
-                        <a href="https://github.com/Salehin-07/" class="contact-method" target="_blank">
-                            <div class="method-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="method-info">
-                                <span class="method-label">GitHub</span>
-                                <span class="method-value">View my code</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-cta">
-                    <div class="cta-content">
-                        <h4>Available for new opportunities</h4>
-                        <p>Currently open to full-time positions and freelance projects.</p>
-                        <a href="mailto:mdabusalehin123@gmail.com" class="btn btn-primary btn-large">
-                            <span>Start a Project</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="method-info">
+              <span class="method-label">Email</span>
+              <span class="method-value">mdabusalehin123@gmail.com</span>
             </div>
+          </a>
+          <!--<a href="https://linkedin.com/in/yourprofile" class="contact-method" target="_blank">-->
+          <!--    <div class="method-icon">-->
+          <!--        <i class="fab fa-linkedin"></i>-->
+          <!--    </div>-->
+          <!--    <div class="method-info">-->
+          <!--        <span class="method-label">LinkedIn</span>-->
+          <!--        <span class="method-value">Connect with me</span>-->
+          <!--    </div>-->
+          <!--</a>-->
+          <a href="https://github.com/Salehin-07/" class="contact-method" target="_blank">
+            <div class="method-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="method-info">
+              <span class="method-label">GitHub</span>
+              <span class="method-value">View my code</span>
+            </div>
+          </a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <div class="footer-logo">
-                        <span class="logo-bracket">&lt;</span>
-                        <span class="logo-name">Salehin</span>
-                        <span class="logo-bracket">/&gt;</span>
-                    </div>
-                    <p class="footer-text">
-                        Crafting digital experiences with passion and precision.
-                    </p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h5>Navigation</h5>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects">Work</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h5>Connect</h5>
-                        <ul>
-                            <li><a href="https://github.com/Salehin-07/" target="_blank">GitHub</a></li>
-                            <!--<li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>-->
-                            <li><a href="mailto:mdabusalehin123@gmail.com">Email</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Md Abu Salehin. Designed & Built with ❤️</p>
-                <div class="footer-socials">
-                    <a href="https://github.com/Salehin-07/" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <!--<a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">-->
-                    <!--    <i class="fab fa-linkedin"></i>-->
-                    <!--</a>-->
-                    <!--<a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">-->
-                    <!--    <i class="fab fa-twitter"></i>-->
-                    <!--</a>-->
-                </div>
-            </div>
+      </div>
+      <div class="contact-cta">
+        <div class="cta-content">
+          <h4>Available for new opportunities</h4>
+          <p>
+            Currently open to full-time positions and freelance projects.
+          </p>
+          <a href="mailto:mdabusalehin123@gmail.com" class="btn btn-primary btn-large">
+            <span>Start a Project</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="./script.js"></script>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Salehin</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Crafting digital experiences with passion and precision.
+        </p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Work</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="https://github.com/Salehin-07/" target="_blank">GitHub</a></li>
+            <!--<li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>-->
+            <li><a href="mailto:mdabusalehin123@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        &copy; 2025 Md Abu Salehin. Designed & Built with ❤️
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/Salehin-07/" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <!--<a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">-->
+        <!--    <i class="fab fa-linkedin"></i>-->
+        <!--</a>-->
+        <!--<a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">-->
+        <!--    <i class="fab fa-twitter"></i>-->
+        <!--</a>-->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
 </body>
 </html>
