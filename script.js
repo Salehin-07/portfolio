@@ -15,6 +15,7 @@ function initializeApp() {
     setupStatsCounter();
     setupSmoothScrolling();
     setupProjectHovers();
+    setupProfileImage();
     console.log('Portfolio initialized successfully!');
 }
 
@@ -504,5 +505,30 @@ if ('serviceWorker' in navigator) {
         //     .catch(registrationError => console.log('SW registration failed:', registrationError));
     });
 }
+
+
+
+// Add to JavaScript file
+function setupProfileImage() {
+  const profileImage = document.querySelector('.profile-image');
+  if (!profileImage) return;
+  
+  profileImage.addEventListener('mouseenter', () => {
+    profileImage.style.transform = 'scale(1.05)';
+    profileImage.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+  });
+  
+  profileImage.addEventListener('mouseleave', () => {
+    profileImage.style.transform = 'scale(1)';
+    profileImage.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+  });
+  
+  // Parallax effect on scroll
+  window.addEventListener('scroll', throttle(() => {
+    const scrollY = window.scrollY;
+    profileImage.style.transform = `translateY(${scrollY * 0.05}px) scale(1)`;
+  }, 10));
+}
+
 
 console.log('🚀 Portfolio fully loaded and optimized!');
