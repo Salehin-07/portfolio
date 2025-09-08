@@ -9,7 +9,7 @@ function initializeApp() {
     setupCustomCursor();
     setupNavigation();
     setupThemeToggle();
-    setupScrollAnimations();
+    setupScrollAnimations();u
     setupHeroAnimations();
     setupSkillInteractions();
     setupStatsCounter();
