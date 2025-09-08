@@ -1856,6 +1856,10 @@ img[loading="lazy"].loaded {
   .hero-image {
     order: 2;
   }
+  
+  .hero-visual {
+    order: 3;
+  }
 }
 
 @media (max-width: 967px) {
