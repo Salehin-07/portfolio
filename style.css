@@ -73,6 +73,11 @@ body {
   transition: var(--transition-slow);
 }
 
+.a-link {
+  text-decoration: none;
+  color: var(--accent-secondary);
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -1872,3 +1877,4 @@ img[loading="lazy"].loaded {
     height: 280px;
   }
 }
+
