@@ -1,0 +1,32 @@
+{
+  "name": "Md Abu Salehin - Python Django Developer",
+  "short_name": "Salehin",
+  "description": "Creative Python Django Developer specializing in modern web applications",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#6366f1",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": [
+    "portfolio",
+    "developer",
+    "web-development"
+  ]
+}

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Add charset as the very first meta tag -->
+  <!-- Critical: Add charset as first meta tag -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Md Abu Salehin - Creative Python Django Developer</title>
   <meta name="description" content="Md Abu Salehin - Creative Python Django Developer specializing in modern web applications">
   <meta name="geo.region" content="BD">
@@ -13,9 +14,38 @@
   <meta name="distribution" content="global">
   <meta name="google-site-verification" content="dOg8s-fJfHKpRGBZ7bJyn82rYZ7C674iQsIaZDLPfAY" />
   
-  <!-- Favicon -->
-  <link rel="icon" href="logo.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="logo.png">
+  <!-- Complete Favicon Implementation -->
+  <!-- Standard favicon (fallback) -->
+  <link rel="icon" type="image/x-icon" href="https://mdsalehin.netlify.app/logo.ico">
+  
+  <!-- PNG favicons for modern browsers -->
+  <link rel="icon" type="image/png" sizes="16x16" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://mdsalehin.netlify.app/logo.png">
+  
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://mdsalehin.netlify.app/logo.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://mdsalehin.netlify.app/logo.png">
+  
+  <!-- Android/Chrome -->
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Windows Tiles -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="https://mdsalehin.netlify.app/logo.png">
+  
+  <!-- Add canonical URL -->
+  <link rel="canonical" href="https://mdsalehin.netlify.app/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -37,7 +67,7 @@
   <link rel="stylesheet" href="./style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   
-  <!-- Fixed JSON-LD structured data -->
+  <!-- Fixed JSON-LD structured data (removed trailing comma) -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -46,6 +76,14 @@
       "url": "https://mdsalehin.netlify.app",
       "jobTitle": "Python Django Developer",
       "image": "https://mdsalehin.netlify.app/logo.png",
+      "description": "Creative Python Django Developer specializing in modern web applications",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tangail",
+        "addressRegion": "Dhaka",
+        "addressCountry": "BD"
+      },
+      "email": "mdabusalehin123@gmail.com",
       "sameAs": [
         "https://github.com/Salehin-07"
       ]
