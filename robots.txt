@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mdsalehin.netlify.app/sitemap.xml
